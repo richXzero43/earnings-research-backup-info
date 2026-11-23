@@ -1,0 +1,23 @@
+/* System fonts and local styles only. */
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172b3a; background: #f5f7fa; line-height: 1.7; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #165e70; text-underline-offset: .2em; }
+a:hover { color: #0c3c48; }
+a:focus-visible { outline: 3px solid #d78b18; outline-offset: 4px; }
+.site-header, main, footer { width: min(100% - 3rem, 790px); margin-inline: auto; }
+.site-header { padding-block: 2rem; border-bottom: 1px solid #d6dfe6; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; }
+.brand { font-size: 1.05rem; font-weight: 700; text-decoration: none; color: #172b3a; }
+nav { display: flex; gap: 1.2rem; font-size: .9rem; }
+nav a[aria-current] { font-weight: 700; }
+main { padding-block: 3rem; }
+.eyebrow { color: #346570; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; }
+h1 { max-width: 650px; font-size: clamp(2.1rem, 6vw, 3.25rem); line-height: 1.16; letter-spacing: -.035em; margin: .6rem 0 1.5rem; }
+.lead { font-size: 1.2rem; color: #405564; max-width: 680px; }
+h2 { font-size: 1.2rem; line-height: 1.4; margin-top: 2.3rem; }
+p { margin-block: .8rem; }
+.updated { color: #536674; font-size: .9rem; }
+code { overflow-wrap: anywhere; font-size: .9em; }
+.notice { padding: 1rem 1.3rem; background: #e8eff2; border-left: 3px solid #346570; margin-top: 2.3rem; border-radius: 0 6px 6px 0; }
+footer { padding-block: 1.4rem 2rem; border-top: 1px solid #d6dfe6; color: #536674; font-size: .85rem; }
+@media (max-width: 480px) { .site-header, main, footer { width: calc(100% - 2rem); } main { padding-top: 2rem; } }
